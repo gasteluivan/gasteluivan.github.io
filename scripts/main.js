@@ -1496,6 +1496,8 @@ const app = Vue.createApp({
           this.setNotify({ className: 'danger', msg: form.getAttribute('data-err-msg'), time: 5000 });
         }
         this.endLoading();
+        var frm = document.getElementsByName('contact-form')[0];
+        frm.reset();  
         }
       ).catch(err => console.log(err));
 
