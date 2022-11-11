@@ -17,7 +17,6 @@ const app = Vue.createApp({
 
       // flag to toggle the preloader
       isPreloading: true,
-
       // toast notifications array
       notifications: [],
 
